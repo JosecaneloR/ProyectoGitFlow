@@ -75,6 +75,18 @@ namespace CapadeDatos
             return tabla;
         }
 
+        public DataTable consultaParametro(String Filtro, String textoFiltro)
+        {
+            conexion.Open();
+            string query = "Select * from Productos Where " + Filtro + " LIKE '%" + textoFiltro + "%'";
+            SqlCommand comando = new SqlCommand(query, conexion);
+            SqlDataAdapter data = new SqlDataAdapter(comando);
+            DataTable tabla = new DataTable();
+            data.Fill(tabla);
+            conexion.Close();
+            return tabla;
+        }
+
         // Insertar prodcutos con Store Procedure
 
         public void insertarProductos(int Codigo_producto, String Descripcion_producto, int cantidad, int Precio_unitario)

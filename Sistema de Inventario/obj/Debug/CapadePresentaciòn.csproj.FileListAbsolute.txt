@@ -45,3 +45,4 @@ C:\Users\DELL LATITUDE 54'80\Desktop\Sistema de Inventario\Sistema de Inventario
 C:\Users\DELL LATITUDE 54'80\Desktop\Sistema de Inventario\Sistema de Inventario\bin\Debug\CapadeSoporte.pdb
 C:\Users\DELL LATITUDE 54'80\Desktop\Sistema de Inventario\Sistema de Inventario\bin\Debug\Capa de Datos.pdb
 C:\Users\DELL LATITUDE 54'80\Desktop\Sistema de Inventario\Sistema de Inventario\obj\Debug\CapadePresentaciòn.csproj.CopyComplete
+C:\Users\DELL LATITUDE 54'80\Desktop\Sistema de Inventario\Sistema de Inventario\obj\Debug\Sistema_de_Inventario.ConsultarProductos.resources
