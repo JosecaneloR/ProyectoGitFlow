@@ -31,7 +31,12 @@ namespace CapadeNegocio
         {
             return con.consultaUsuarios();
         }
-        
+
+        public DataTable consultaParametroCN(String Filtro, String textoFiltro)
+        {
+            return con.consultaParametro(Filtro, textoFiltro);
+        }
+
         public void insertarProductosCN(int Codigo_producto, String Descripcion_producto, int cantidad, int Precio_unitario)
         {
             con.insertarProductos(Codigo_producto, Descripcion_producto, cantidad, Precio_unitario);

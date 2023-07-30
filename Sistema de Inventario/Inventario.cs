@@ -25,7 +25,12 @@ namespace Sistema_de_Inventario
         {
             if (CacheUsuario.rol == Roles.Estandar)
             {
-                
+                button6.Enabled = false;
+                button6.BackColor = Color.Gray; button6.ForeColor = Color.White;
+                label3.Text = "Usuario Estandar";
+            } else
+            {
+                label3.Text = "Administrador";
             }
             
         }
@@ -166,6 +171,13 @@ namespace Sistema_de_Inventario
         private void pictureBox3_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+            ConsultarProductos buscar_Producto = new ConsultarProductos();
+            buscar_Producto.Show();
         }
     }
 }
